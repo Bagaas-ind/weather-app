@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+## 🌤️ 2. README untuk Project APK Cuaca (Synoptic)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+```markdown
+# Synoptic - Premium Weather App 🌤️🌪️
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Synoptic** adalah aplikasi cuaca modern yang dirancang dengan antarmuka *Glassmorphism* (efek kaca transparan) yang premium. Aplikasi ini memberikan prakiraan cuaca *real-time* dengan sentuhan desain yang elegan dan responsif.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Fitur Utama
 
-## Learn More
+- **Desain Premium**: Latar belakang dinamis yang berubah otomatis sesuai kondisi cuaca dan wilayah (Perkotaan vs Nusantara).
+- **Mode Gelap/Terang**: Dukungan *Dark Mode* elegan (Navy) dan *Light Mode* segar (Sky Blue).
+- **Data Cuaca Real-Time**: Mengambil data suhu, kelembapan, dan kecepatan angin dari API Open-Meteo.
+- **Prakiraan 5 Hari**: Menampilkan prakiraan cuaca harian untuk 5 hari ke depan.
+- **Rekomendasi Gaya Hidup**: Saran pakaian dan aktivitas berdasarkan kondisi cuaca (misal: *"Bawa Payung"* jika hujan).
+- **Mode Simulasi**: Fitur *fallback* cerdas yang otomatis menampilkan data tiruan jika koneksi API terblokir atau internet mati.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Flutter](https://flutter.dev/)
+- **Bahasa**: [Dart](https://dart.dev/)
+- **API**: [Open-Meteo API](https://open-meteo.com/)
+- **Icons**: [Lucide Flutter](https://pub.dev/packages/lucide_icons)
+- **Fonts**: [Google Fonts](https://fonts.google.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Cara Menjalankan Project di Lokal
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone repository ini:**
+   ```bash
+   git clone https://github.com/Bagaas-ind/synoptic-weather.git
+   cd synoptic-weather
