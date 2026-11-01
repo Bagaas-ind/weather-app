@@ -7,19 +7,19 @@ import {
 } from "lucide-react";
 
 // ==========================================
-// 1. FUNGSI BACKGROUND IMAGE (URL LEBIH STABIL)
+// 1. FUNGSI BACKGROUND IMAGE (SUASANA ADEM & AESTHETIC)
 // ==========================================
 const getBackgroundImage = (condition: string, isDark: boolean) => {
   const c = condition.toLowerCase();
   
   if (isDark) {
-    if (c.includes("hujan")) return "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=1500&auto=format&fit=crop"; 
-    if (c.includes("cerah") || c.includes("panas")) return "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1500&auto=format&fit=crop"; 
-    return "https://images.unsplash.com/photo-1534088568595-a066f410cbda?q=80&w=1500&auto=format&fit=crop"; 
+    if (c.includes("hujan")) return "https://images.unsplash.com/photo-1519692933481-e162a57d6721?q=80&w=1500&auto=format&fit=crop"; // Hujan cozy di jendela
+    if (c.includes("cerah") || c.includes("panas")) return "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1500&auto=format&fit=crop"; // Malam berbintang
+    return "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?q=80&w=1500&auto=format&fit=crop"; // Awan malam yang tenang
   } else {
-    if (c.includes("hujan")) return "https://images.unsplash.com/photo-1428592953211-077101b2021b?q=80&w=1500&auto=format&fit=crop"; 
-    if (c.includes("panas") || c.includes("cerah")) return "https://images.unsplash.com/photo-1601297183305-6df142704ea2?q=80&w=1500&auto=format&fit=crop"; 
-    return "https://images.unsplash.com/photo-1500740516770-92bd004b996e?q=80&w=1500&auto=format&fit=crop"; 
+    if (c.includes("hujan")) return "https://images.unsplash.com/photo-1428592953211-077101b2021b?q=80&w=1500&auto=format&fit=crop"; // Hujan siang
+    if (c.includes("panas") || c.includes("cerah")) return "https://images.unsplash.com/photo-1601297183305-6df142704ea2?q=80&w=1500&auto=format&fit=crop"; // Langit biru cerah
+    return "https://images.unsplash.com/photo-1500740516770-92bd004b996e?q=80&w=1500&auto=format&fit=crop"; // Awan putih empuk
   }
 };
 
@@ -101,14 +101,13 @@ export default function WeatherApp() {
   return (
     <main 
       className="min-h-screen font-sans relative overflow-hidden transition-all duration-1000 bg-cover bg-center bg-no-repeat bg-fixed"
-      // Tambahan backgroundColor sebagai fallback jika gambar gagal load
       style={{ 
         backgroundImage: `url('${getBackgroundImage(currentCondition, isDark)}')`,
         backgroundColor: '#0f172a' 
       }}
     >
-      {/* Overlay Gelap (Dikurangi jadi 40% biar gambar lebih kelihatan) */}
-      <div className={`absolute inset-0 transition-colors duration-1000 ${isDark ? 'bg-black/40' : 'bg-black/20'}`}></div>
+      {/* Overlay Gelap */}
+      <div className={`absolute inset-0 transition-colors duration-1000 ${isDark ? 'bg-black/50' : 'bg-black/20'}`}></div>
       
       <div className="relative z-10 min-h-screen flex flex-col p-4 md:p-8 max-w-6xl mx-auto">
         
@@ -224,7 +223,7 @@ export default function WeatherApp() {
                   </div>
                 </div>
 
-                {/* Rekomendasi (Pindah ke Kiri Bawah) */}
+                {/* Rekomendasi */}
                 <div className={`mt-4 ${glassPanel} rounded-2xl p-4 flex items-center gap-4`}>
                   <div className="p-3 bg-white/10 rounded-full">
                     <Shirt className="w-6 h-6 text-white" />
