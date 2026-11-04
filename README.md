@@ -40,3 +40,14 @@ weather-app/
 ├── package.json         # Daftar dependencies
 ├── tailwind.config.ts   # Konfigurasi Tailwind CSS
 └── tsconfig.json        # Konfigurasi TypeScript
+
+---
+
+## 🚀 Cara Menjalankan (Secara Lokal)
+
+Ikuti langkah ini jika kamu ingin menjalankan proyek ini di komputermu:
+
+1. **Clone repositori ini:**
+   Buka terminal dan jalankan perintah berikut:
+   ```bash
+   git clone https://github.com/Bagaas-ind/weather-app.git
