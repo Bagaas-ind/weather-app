@@ -1,4 +1,4 @@
-# Synoptic - Premium Web Weather App 🌤️🏆
+# 🌦️ Synoptic - Web Weather App
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -7,7 +7,7 @@
 Synoptic adalah aplikasi cuaca berbasis web modern yang dirancang dengan antarmuka premium. Menggunakan latar belakang dinamis (bintang di malam hari, awan di siang hari) tanpa gambar yang mengganggu, sehingga informasi cuaca tetap menjadi fokus utama.
 
 ## 🌐 Live Demo
-Cek website yang sudah online di sini: 
+Cek website yang sudah online di sini:
 👉 **[https://cuaca-synoptic.vercel.app](https://cuaca-synoptic.vercel.app)**
 
 ## ✨ Fitur Utama
@@ -26,4 +26,17 @@ Cek website yang sudah online di sini:
 - **Deployment:** Vercel
 
 ---
-*Dibuat oleh [Bagaas-ind](https://github.com/Bagaas-ind)*
+
+## 📂 Struktur Folder
+
+```text
+weather-app/
+├── app/
+│   ├── globals.css      # Styling global & Tailwind
+│   ├── layout.tsx       # Root layout aplikasi
+│   └── page.tsx         # Halaman utama dashboard cuaca
+├── public/              # Aset statis (gambar, ikon)
+├── next.config.ts       # Konfigurasi Next.js
+├── package.json         # Daftar dependencies
+├── tailwind.config.ts   # Konfigurasi Tailwind CSS
+└── tsconfig.json        # Konfigurasi TypeScript
