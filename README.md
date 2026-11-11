@@ -40,3 +40,6 @@ weather-app/
 ├── package.json         # Daftar dependencies
 ├── tailwind.config.ts   # Konfigurasi Tailwind CSS
 └── tsconfig.json        # Konfigurasi TypeScript
+
+## Update
+- Menambahkan fitur hujan real-time.
